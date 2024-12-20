@@ -7,120 +7,124 @@ html {
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.25rem; /* Изменено на rem */
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #d1f504; /* HEX */
-    color: rgba(71, 7, 231, 1); /* RGBA */
-    cursor: url('cur.png'), auto; /* Путь к файлу курсора */
+    background-color: #d1f504;
+    color: #4707e7;
+    cursor: url(cur.png), auto;
     height: 100%;
     width: 100%;
 }
 
 header {
-    font-family: Arial, sans-serif;
-    background-color: #333; /* HEX */
+    font-family: Arial;
+    background-color: #333;
     color: white;
-    padding: 2rem 1rem; /* Используем rem */
+    padding: 20px 10px;
     text-align: center;
     width: 100%;
     height: auto;
-    position: relative;
-    display: flex; /* Добавлено для flex */
-    flex-wrap: wrap;
-    justify-content: center; /* Центрируем элементы по горизонтали */
+    position: relative; /* Позиционирование для использования в дальнейшем */
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.5rem; /* Используем rem */
+    font-size: 24px;
     width: 100%;
 }
 
+/* Использование грида в навигации */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Добавлено для flex */
-    justify-content: center;
-    gap: 1.25rem; /* Используем rem */
+    display: grid; /* Используем грид */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматическое размещение элементов в сетке */
+    justify-items: center; /* Выравнивание элементов по горизонтали */
+    gap: 20px;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1500px; /* Ограничиваем максимальную ширину */
 }
 
 nav ul li {
-    display: inline;
+    display: block;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.125rem; /* Используем rem */
+    font-size: 18px;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Используем грид в контейнере main */
 main {
-    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Одна колонка по умолчанию */
+    gap: 2rem; /* Промежутки между секциями */
+    padding: 20px;
     width: 100%;
-    max-width: 75rem; /* Используем rem */
-    min-width: 320px;
-    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 320px; /* Минимальная ширина для мобильных устройств */
+    margin: 0 auto; /* Центрируем основной контент */
 }
 
+/* Секции в гриде */
 section {
-    margin-bottom: 2.5rem; /* Используем rem */
-    padding: 1.25rem;
+    margin-bottom: 40px;
+    padding: 20px;
     background: white;
-    border-radius: 1rem;
+    border-radius: 16px;
     width: 100%;
-    max-width: 100%;
-    min-height: 200px;
-    position: relative;
-    top: 2rem;
-    border-radius: 1rem;
-    border: 1.25rem solid hsl(0, 100%, 50%);
-    display: flex; /* Добавлено для flex */
-    flex-direction: column; /* Вертикальное расположение элементов */
+    max-width: 100%; /* Ширина будет адаптироваться к родительскому элементу */
+    min-height: 200px; /* Минимальная высота секции */
+    position: relative; /* Позиционирование для контента внутри секции */
+    top: 100px;
+    border-radius: 16px;
+    border: 20px solid red;
 }
 
 section p {
-    margin: 0.625rem 0;
+    margin: 10px 0;
 }
 
 section ul {
-    margin: 0.625rem 0;
+    margin: 10px 0 10px 20px;
     padding-left: 0;
 }
 
 section ul li {
-    margin: 0.3125rem 2rem;
+    margin: 5px 0;
 }
 
+/* Стили для изображений внутри секций */
 section img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0.625rem auto;
-    border-radius: 0.5rem;
-    max-width: 31.25rem; /* Используем rem */
-    min-width: 9.375rem; /* Используем rem */
+    margin: 10px auto;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Ограничиваем максимальную ширину для изображений */
+    min-width: 150px; /* Минимальная ширина изображения */
 }
 
 section div p {
-    font-size: 0.875rem; /* Используем rem */
+    font-size: 14px;
     text-align: center;
-    margin-top: 0.625rem;
-    color: rgba(102, 102, 102, 1); /* RGBA */
+    margin-top: 10px;
+    color: #666;
 }
 
 a {
-    color: #007BFF; /* HEX */
+    color: #007BFF;
     text-decoration: none;
 }
 
@@ -128,43 +132,47 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Использование грида в футере */
 footer {
-    background-color: #333; /* HEX */
+    display: grid; /* Используем грид */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Автоматическое распределение колонок */
+    gap: 1rem;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.875rem; /* Используем rem */
-    position: relative;
+    padding: 10px;
+    font-size: 14px;
+    position: relative; /* Позиционирование для работы с z-index */
     width: 100%;
 }
 
 img {
-    width: 100%;
+    width: 100%; /* Все изображения адаптируются к ширине родительского контейнера */
     height: auto;
-    object-fit: contain;
-    max-width: 37.5rem; /* Используем rem */
-    min-width: 6.25rem; 
+    object-fit: contain; /* Сохранение пропорций изображений */
+    max-width: 600px;
+    min-width: 100px;
 }
 
 #carry {
     background-color: aqua;
     width: 100%;
     max-width: 1500px;
-    min-width: 12.5rem;
-    position: relative;
+    min-width: 200px;
+    position: relative; /* Позиционирование для конкретного элемента */
     z-index: 5;
 }
 
 /* Абсолютное позиционирование для надписи */
 #absolute-message {
-    position: fixed;
-    top: 0.625rem; /* Используем rem */
-    left: 0.625rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    position: fixed; /* Фиксированное позиционирование */
+    top: 10px; /* Располагаем в 10px от верхнего края */
+    left: 10px; /* Располагаем в 10px от левого края */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
     color: white;
-    padding: 0.625rem 1.25rem;
-    font-size: 1.25rem; /* Используем rem */
+    padding: 10px 20px;
+    font-size: 20px;
     font-weight: bold;
-    border-radius: 0.5rem;
-    z-index: 10;
+    border-radius: 8px;
+    z-index: 20; /* Устанавливаем z-index для отображения над другими элементами */
 }
