@@ -81,6 +81,8 @@ section {
     min-height: 200px; /* Минимальная высота секции */
     position: relative; /* Позиционирование для контента внутри секции */
     top: 100px;
+    border-radius: 16px;
+    border: 20px solid red;
 }
 
 section p {
