@@ -1,0 +1,167 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #d1f504;
+    color: #4707e7;
+    cursor: url(cur.png), auto;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    font-family: Arial;
+    background-color: #333;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: relative; /* Позиционирование для использования в дальнейшем */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px; /* Ограничиваем максимальную ширину */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 320px; /* Минимальная ширина для мобильных устройств */
+    margin: 0 auto; /* Центрируем основной контент */
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 100%; /* Ширина будет адаптироваться к родительскому элементу */
+    min-height: 200px; /* Минимальная высота секции */
+    position: relative; /* Позиционирование для контента внутри секции */
+    top: 100px;
+}
+
+section p {
+    margin: 10px 0;
+    
+}
+
+section ul {
+    margin: 10px 0 10px 20px;
+    padding-left: 0;
+}
+
+section ul li {
+    margin: 5px 0;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Ограничиваем максимальную ширину для изображений */
+    min-width: 150px; /* Минимальная ширина изображения */
+}
+
+section div p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    position: relative; /* Позиционирование для работы с z-index */
+    width: 100%;
+}
+
+img {
+    width: 100%; /* Все изображения адаптируются к ширине родительского контейнера */
+    height: auto;
+    object-fit: contain; /* Сохранение пропорций изображений */
+    max-width: 600px;
+    min-width: 100px;
+}
+
+#carry {
+    background-color: aqua;
+    width: 100%;
+    max-width: 1500px;
+    min-width: 200px;
+    position: relative; /* Позиционирование для конкретного элемента */
+    z-index: 5;
+}
+
+/* Абсолютное позиционирование для надписи */
+#absolute-message {
+    position: absolute;
+    position: fixed; /* Фиксированное позиционирование */
+    top: 10px; /* Располагаем в 10px от верхнего края */
+    left: 10px; /* Располагаем в 10px от левого края */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    z-index: 20; /* Устанавливаем z-index для отображения над другими элементами */
+}
