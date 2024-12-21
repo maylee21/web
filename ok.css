@@ -169,3 +169,18 @@ img {
     border-radius: 0.5rem;
     z-index: 10;
 }
+
+.car {
+    order:2;
+    flex-basis:35%;
+}
+
+.mid {
+    order:3;
+    flex-basis:20%
+}
+
+.hard{
+    order:1;
+    flex-basis:25%;
+}
