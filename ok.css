@@ -29,7 +29,7 @@ header {
     text-align: center;
     width: 100%;
     height: auto;
-    position: relative; /* Позиционирование для использования в дальнейшем */
+    position: relative; 
 }
 
 header h1 {
@@ -46,7 +46,7 @@ nav ul {
     justify-content: center;
     gap: 20px;
     width: 100%;
-    max-width: 1500px; /* Ограничиваем максимальную ширину */
+    max-width: 1500px; 
 }
 
 nav ul li {
@@ -67,8 +67,8 @@ main {
     padding: 20px;
     width: 100%;
     max-width: 1200px;
-    min-width: 320px; /* Минимальная ширина для мобильных устройств */
-    margin: 0 auto; /* Центрируем основной контент */
+    min-width: 320px; 
+    margin: 0 auto; 
 }
 
 section {
@@ -77,9 +77,9 @@ section {
     background: white;
     border-radius: 16px;
     width: 100%;
-    max-width: 100%; /* Ширина будет адаптироваться к родительскому элементу */
-    min-height: 200px; /* Минимальная высота секции */
-    position: relative; /* Позиционирование для контента внутри секции */
+    max-width: 100%; 
+    min-height: 200px; 
+    position: relative; 
     top: 100px;
     border-radius: 16px;
     border: 20px solid red;
@@ -106,8 +106,8 @@ section img {
     margin: 10px auto;
     border-radius: 8px;
     width: 100%;
-    max-width: 500px; /* Ограничиваем максимальную ширину для изображений */
-    min-width: 150px; /* Минимальная ширина изображения */
+    max-width: 500px; 
+    min-width: 150px; 
 }
 
 section div p {
@@ -132,14 +132,14 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 14px;
-    position: relative; /* Позиционирование для работы с z-index */
+    position: relative;
     width: 100%;
 }
 
 img {
-    width: 100%; /* Все изображения адаптируются к ширине родительского контейнера */
+    width: 100%; 
     height: auto;
-    object-fit: contain; /* Сохранение пропорций изображений */
+    object-fit: contain; 
     max-width: 600px;
     min-width: 100px;
 }
@@ -149,20 +149,20 @@ img {
     width: 100%;
     max-width: 1500px;
     min-width: 200px;
-    position: relative; /* Позиционирование для конкретного элемента */
+    position: relative; 
     z-index: 5;
 }
 
-/* Абсолютное позиционирование для надписи */
+
 #absolute-message {
-    position: fixed; /* Фиксированное позиционирование */
-    top: 10px; /* Располагаем в 10px от верхнего края */
-    left: 10px; /* Располагаем в 10px от левого края */
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    position: fixed; 
+    top: 10px; 
+    left: 10px; 
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
     padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
     border-radius: 8px;
-    z-index: 20; /* Устанавливаем z-index для отображения над другими элементами */
+    z-index: 20; 
 }
