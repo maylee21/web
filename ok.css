@@ -153,6 +153,7 @@ img {
     min-width: 12.5rem;
     position: relative;
     z-index: 5;
+    /* top: 100px; */
 }
 
 
