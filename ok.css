@@ -8,35 +8,35 @@ html {
 
 body {
     font-family: 'Nunito', sans-serif;
-    font-size: 1.25rem; /* Изменено на rem */
+    font-size: 1.25rem; 
     font-weight: 400;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #d1f504; /* HEX */
-    color: rgba(71, 7, 231, 1); /* RGBA */
-    cursor: url('cur.png'), auto; /* Путь к файлу курсора */
+    background-color: #d1f504;
+    color: rgba(71, 7, 231, 1);
+    cursor: url('cur.png'), auto;
     height: 100%;
     width: 100%;
 }
 
 header {
     font-family: Arial, sans-serif;
-    background-color: #333; /* HEX */
+    background-color: #333; 
     color: white;
-    padding: 2rem 1rem; /* Используем rem */
+    padding: 2rem 1rem;
     text-align: center;
     width: 100%;
     height: auto;
     position: relative;
-    display: flex; /* Добавлено для flex */
+    display: flex; 
     flex-wrap: wrap;
-    justify-content: center; /* Центрируем элементы по горизонтали */
+    justify-content: center; 
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.5rem; /* Используем rem */
+    font-size: 1.5rem; 
     width: 100%;
 }
 
@@ -44,9 +44,9 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Добавлено для flex */
+    display: flex; 
     justify-content: center;
-    gap: 1.25rem; /* Используем rem */
+    gap: 1.25rem; 
     width: 100%;
     max-width: 1500px;
 }
@@ -58,7 +58,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.125rem; /* Используем rem */
+    font-size: 1.125rem; 
 }
 
 nav ul li a:hover {
@@ -68,13 +68,13 @@ nav ul li a:hover {
 main {
     padding: 2rem;
     width: 100%;
-    max-width: 75rem; /* Используем rem */
+    max-width: 75rem;
     min-width: 320px;
     margin: 0 auto;
 }
 
 section {
-    margin-bottom: 2.5rem; /* Используем rem */
+    margin-bottom: 2.5rem; 
     padding: 1.25rem;
     background: white;
     border-radius: 1rem;
@@ -85,8 +85,8 @@ section {
     top: 2rem;
     border-radius: 1rem;
     border: 1.25rem solid hsl(0, 100%, 50%);
-    display: flex; /* Добавлено для flex */
-    flex-direction: column; /* Вертикальное расположение элементов */
+    display: flex; 
+    flex-direction: column; 
 }
 
 section p {
@@ -108,19 +108,19 @@ section img {
     display: block;
     margin: 0.625rem auto;
     border-radius: 0.5rem;
-    max-width: 31.25rem; /* Используем rem */
-    min-width: 9.375rem; /* Используем rem */
+    max-width: 31.25rem; 
+    min-width: 9.375rem; 
 }
 
 section div p {
-    font-size: 0.875rem; /* Используем rem */
+    font-size: 0.875rem; 
     text-align: center;
     margin-top: 0.625rem;
-    color: rgba(102, 102, 102, 1); /* RGBA */
+    color: rgba(102, 102, 102, 1); 
 }
 
 a {
-    color: #007BFF; /* HEX */
+    color: #007BFF; 
     text-decoration: none;
 }
 
@@ -129,11 +129,11 @@ a:hover {
 }
 
 footer {
-    background-color: #333; /* HEX */
+    background-color: #333; 
     color: white;
     text-align: center;
     padding: 1rem;
-    font-size: 0.875rem; /* Используем rem */
+    font-size: 0.875rem; 
     position: relative;
     width: 100%;
 }
@@ -142,7 +142,7 @@ img {
     width: 100%;
     height: auto;
     object-fit: contain;
-    max-width: 37.5rem; /* Используем rem */
+    max-width: 37.5rem; 
     min-width: 6.25rem; 
 }
 
@@ -155,15 +155,15 @@ img {
     z-index: 5;
 }
 
-/* Абсолютное позиционирование для надписи */
+
 #absolute-message {
     position: fixed;
-    top: 0.625rem; /* Используем rem */
+    top: 0.625rem;
     left: 0.625rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
     padding: 0.625rem 1.25rem;
-    font-size: 1.25rem; /* Используем rem */
+    font-size: 1.25rem; 
     font-weight: bold;
     border-radius: 0.5rem;
     z-index: 10;
