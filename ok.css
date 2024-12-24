@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -7,36 +8,33 @@ html {
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.25rem; 
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #d1f504;
-    color: rgba(71, 7, 231, 1);
-    cursor: url('cur.png'), auto;
+    color: #4707e7;
+    cursor: url(cur.png), auto;
     height: 100%;
     width: 100%;
 }
 
 header {
-    font-family: Arial, sans-serif;
-    background-color: #333; 
+    font-family: Arial;
+    background-color: #333;
     color: white;
-    padding: 2rem 1rem;
+    padding: 20px 10px;
     text-align: center;
     width: 100%;
     height: auto;
-    position: relative;
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center; 
+    position: relative; 
 }
 
 header h1 {
     margin: 0;
-    font-size: 1.5rem; 
+    font-size: 24px;
     width: 100%;
 }
 
@@ -44,11 +42,11 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; 
+    display: flex;
     justify-content: center;
-    gap: 1.25rem; 
+    gap: 20px;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1500px; 
 }
 
 nav ul li {
@@ -58,7 +56,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.125rem; 
+    font-size: 18px;
 }
 
 nav ul li a:hover {
@@ -66,61 +64,61 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 2rem;
+    padding: 20px;
     width: 100%;
-    max-width: 75rem;
-    min-width: 320px;
-    margin: 0 auto;
+    max-width: 1500px;
+    min-width: 320px; 
+    margin: 0 auto; 
 }
 
 section {
-    margin-bottom: 2.5rem; 
-    padding: 1.25rem;
+    margin-bottom: 40px;
+    padding: 20px;
     background: white;
-    border-radius: 1rem;
+    border-radius: 16px;
     width: 100%;
-    max-width: 100%;
-    min-height: 200px;
-    position: relative;
-    top: 2rem;
-    border-radius: 1rem;
-    border: 1.25rem solid hsl(0, 100%, 50%);
-    display: flex; 
-    flex-direction: column; 
+    max-width: 100%; 
+    min-height: 200px; 
+    position: relative; 
+    top: 100px;
+    border-radius: 16px;
+    border: 20px solid red;
 }
 
 section p {
-    margin: 0.625rem 0;
+    margin: 10px 0;
+    
 }
 
 section ul {
-    margin: 0.625rem 0;
+    margin: 10px 0 10px 20px;
     padding-left: 0;
 }
 
 section ul li {
-    margin: 0.3125rem 2rem;
+    margin: 5px 0;
 }
 
 section img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0.625rem auto;
-    border-radius: 0.5rem;
-    max-width: 31.25rem; 
-    min-width: 9.375rem; 
+    margin: 10px auto;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; 
+    min-width: 150px; 
 }
 
 section div p {
-    font-size: 0.875rem; 
+    font-size: 14px;
     text-align: center;
-    margin-top: 0.625rem;
-    color: rgba(102, 102, 102, 1); 
+    margin-top: 10px;
+    color: #666;
 }
 
 a {
-    color: #007BFF; 
+    color: #007BFF;
     text-decoration: none;
 }
 
@@ -129,58 +127,95 @@ a:hover {
 }
 
 footer {
-    background-color: #333; 
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.875rem; 
+    padding: 10px;
+    font-size: 14px;
     position: relative;
+    bottom: 0;
     width: 100%;
 }
 
 img {
-    width: 100%;
+    width: 100%; 
     height: auto;
-    object-fit: contain;
-    max-width: 37.5rem; 
-    min-width: 6.25rem; 
+    object-fit: contain; 
+    max-width: 600px;
+    min-width: 100px;
 }
 
 #carry {
     background-color: aqua;
     width: 100%;
     max-width: 1500px;
-    min-width: 12.5rem;
-    position: relative;
+    min-width: 200px;
+    position: relative; 
     z-index: 5;
-    /* top: 100px; */
 }
 
 
 #absolute-message {
-    position: fixed;
-    top: 0.625rem;
-    left: 0.625rem;
+    position: fixed; 
+    top: 10px; 
+    left: 10px; 
     background-color: rgba(0, 0, 0, 0.5); 
     color: white;
-    padding: 0.625rem 1.25rem;
-    font-size: 1.25rem; 
+    padding: 10px 20px;
+    font-size: 20px;
     font-weight: bold;
-    border-radius: 0.5rem;
-    z-index: 10;
+    border-radius: 8px;
+    z-index: 20; 
 }
 
-.car {
-    order:2;
-    flex-basis:auto;
+.registration-form {
+    max-width: 600px; /* Максимальная ширина формы */
+    margin: 50px auto; /* Центрирование формы */
+    padding: 20px; /* Внутренние отступы */
+    background: white; /* Белый фон для контраста */
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для глубины */
 }
 
-.mid {
-    order:3;
-    flex-basis:auto
+.registration-form fieldset {
+    border: 1px solid #ccc; /* Легкая граница */
+    margin-bottom: 20px; /* Отступ между группами */
+    padding: 10px; /* Внутренний отступ внутри группы */
 }
 
-.hard{
-    order:1;
-    flex-basis:auto;
+.registration-form legend {
+    font-weight: bold; /* Жирный текст для заголовков групп */
+    font-size: 18px; /* Увеличенный шрифт */
+}
+
+.registration-form label {
+    display: block; /* Каждая метка на отдельной строке */
+    margin: 10px 0 5px; /* Отступ перед и после */
+    font-size: 14px; /* Оптимальный размер шрифта */
+}
+
+.registration-form input, 
+.registration-form select {
+    width: 100%; /* Растягивание полей на всю ширину */
+    padding: 10px; /* Удобный отступ внутри */
+    margin-bottom: 10px; /* Отступ снизу */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 5px; /* Скругление углов */
+    font-size: 16px; /* Размер шрифта */
+}
+
+.registration-form button {
+    display: flex; /* Горизонтальное выравнивание для иконки */
+    align-items: center; /* Вертикальное выравнивание текста и иконки */
+    justify-content: center; /* Центровка содержимого кнопки */
+    padding: 10px 20px; /* Размер кнопки */
+    background-color: #007BFF; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем стандартные границы */
+    border-radius: 5px; /* Скругление углов */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+.registration-form button:hover {
+    background-color: #0056b3; /* Темный цвет при наведении */
 }
