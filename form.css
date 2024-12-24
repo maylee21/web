@@ -1,4 +1,4 @@
-/* Сброс стандартных стилей */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,16 +7,15 @@
 
 body {
     font-family: 'Nunito', Arial, sans-serif;
-    background-color: #f4f7fa;  /* Мягкий фон */
+    background-color: #f4f7fa;
     color: #333;
     line-height: 1.6;
     padding: 20px;
     font-size: 16px;
 }
 
-/* Стили для шапки */
 header {
-    background-color: #2e3a59;  /* Тёмный синий */
+    background-color: #2e3a59;
     color: white;
     padding: 20px;
     text-align: center;
@@ -50,10 +49,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #b1c4e3;  /* Мягкий голубой */
+    color: #b1c4e3;
 }
 
-/* Основные стили формы */
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -64,7 +62,13 @@ main {
     background-color: #ffffff;
 }
 
-/* Группировка элементов формы */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -76,7 +80,6 @@ label {
     display: inline-block;
 }
 
-/* Стили для полей ввода */
 input[type="text"],
 input[type="date"],
 input[type="email"],
@@ -96,6 +99,7 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus {
     border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     outline: none;
 }
 
@@ -176,14 +180,17 @@ button {
     font-size: 18px;
     cursor: pointer;
     border-radius: 8px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 button:active {
     background-color: #004080;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 button:focus {
