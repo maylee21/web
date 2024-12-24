@@ -95,12 +95,12 @@ input[type="date"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus {
-    border-color: #007bff;  /* Голубой при фокусе */
+    border-color: #007bff;
     outline: none;
 }
 
 input[required]:invalid {
-    border-color: #e74c3c;  /* Красный, если поле не заполнено корректно */
+    border-color: #e74c3c;
 }
 
 input::placeholder {
@@ -108,7 +108,6 @@ input::placeholder {
     font-style: italic;
 }
 
-/* Стили для радиокнопок и чекбоксов */
 input[type="radio"],
 input[type="checkbox"] {
     opacity: 0;
@@ -169,7 +168,6 @@ input[type="checkbox"]:checked + label {
     text-decoration: line-through;
 }
 
-/* Стили для кнопок */
 button {
     background-color: #007bff;
     color: white;
