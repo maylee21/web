@@ -172,15 +172,15 @@ img {
 
 .car {
     order:2;
-    flex-basis:35%;
+    flex-basis:auto;
 }
 
 .mid {
     order:3;
-    flex-basis:20%
+    flex-basis:auto
 }
 
 .hard{
     order:1;
-    flex-basis:25%;
+    flex-basis:auto;
 }
