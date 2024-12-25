@@ -1,4 +1,4 @@
-/* Сброс стандартных стилей */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,16 +7,16 @@
 
 body {
     font-family: 'Nunito', Arial, sans-serif;
-    background-color: #f4f7fa;  /* Мягкий фон */
+    background-color: #f4f7fa; 
     color: #333;
     line-height: 1.6;
     padding: 20px;
     font-size: 16px;
 }
 
-/* Стили для шапки */
+
 header {
-    background-color: #2e3a59;  /* Тёмный синий */
+    background-color: #2e3a59;
     color: white;
     padding: 20px;
     text-align: center;
@@ -50,10 +50,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #b1c4e3;  /* Мягкий голубой */
+    color: #b1c4e3;
 }
 
-/* Основные стили формы */
+
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -64,7 +64,7 @@ main {
     background-color: #ffffff;
 }
 
-/* Группировка элементов формы */
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -76,7 +76,7 @@ label {
     display: inline-block;
 }
 
-/* Стили для полей ввода */
+
 input[type="text"],
 input[type="date"],
 input[type="email"],
