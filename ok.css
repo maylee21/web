@@ -169,53 +169,53 @@ img {
 }
 
 .registration-form {
-    max-width: 600px; /* Максимальная ширина формы */
-    margin: 50px auto; /* Центрирование формы */
-    padding: 20px; /* Внутренние отступы */
-    background: white; /* Белый фон для контраста */
-    border-radius: 10px; /* Скругление углов */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+    max-width: 600px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    background: white; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .registration-form fieldset {
-    border: 1px solid #ccc; /* Легкая граница */
-    margin-bottom: 20px; /* Отступ между группами */
-    padding: 10px; /* Внутренний отступ внутри группы */
+    border: 1px solid #ccc; 
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .registration-form legend {
-    font-weight: bold; /* Жирный текст для заголовков групп */
-    font-size: 18px; /* Увеличенный шрифт */
+    font-weight: bold; 
+    font-size: 18px; 
 }
 
 .registration-form label {
-    display: block; /* Каждая метка на отдельной строке */
-    margin: 10px 0 5px; /* Отступ перед и после */
-    font-size: 14px; /* Оптимальный размер шрифта */
+    display: block; 
+    margin: 10px 0 5px; 
+    font-size: 14px; 
 }
 
 .registration-form input, 
 .registration-form select {
-    width: 100%; /* Растягивание полей на всю ширину */
-    padding: 10px; /* Удобный отступ внутри */
-    margin-bottom: 10px; /* Отступ снизу */
-    border: 1px solid #ccc; /* Граница */
-    border-radius: 5px; /* Скругление углов */
-    font-size: 16px; /* Размер шрифта */
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
 }
 
 .registration-form button {
-    display: flex; /* Горизонтальное выравнивание для иконки */
-    align-items: center; /* Вертикальное выравнивание текста и иконки */
-    justify-content: center; /* Центровка содержимого кнопки */
-    padding: 10px 20px; /* Размер кнопки */
-    background-color: #007BFF; /* Цвет кнопки */
-    color: white; /* Цвет текста */
-    border: none; /* Убираем стандартные границы */
-    border-radius: 5px; /* Скругление углов */
-    cursor: pointer; /* Указатель при наведении */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px 20px; 
+    background-color: #007BFF;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 
 .registration-form button:hover {
-    background-color: #0056b3; /* Темный цвет при наведении */
+    background-color: #0056b3; 
 }
